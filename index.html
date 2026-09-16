@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Mental Maths Speed Test</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🧠 Mental Maths Speed Test</h1>
+
+        <p class="subtitle">
+            Test your calculation speed and accuracy!
+        </p>
+
+        <div class="stats">
+            <div>
+                <span>Time</span>
+                <strong id="timer">60</strong>
+            </div>
+
+            <div>
+                <span>Score</span>
+                <strong id="score">0</strong>
+            </div>
+
+            <div>
+                <span>Question</span>
+                <strong id="questionNumber">0</strong>
+            </div>
+        </div>
+
+        <div id="startScreen">
+            <h2>Ready?</h2>
+            <p>You will have 60 seconds to solve as many questions as possible.</p>
+
+            <button id="startBtn">Start Test</button>
+        </div>
+
+        <div id="quizScreen" class="hidden">
+
+            <div class="question-box">
+                <h2 id="question">5 + 7 = ?</h2>
+            </div>
+
+            <input
+                type="number"
+                id="answer"
+                placeholder="Enter your answer"
+                autocomplete="off"
+            >
+
+            <button id="submitBtn">Submit Answer</button>
+
+            <p id="feedback"></p>
+
+        </div>
+
+        <div id="resultScreen" class="hidden">
+
+            <h2>🎉 Test Complete!</h2>
+
+            <p>Your Score:</p>
+            <strong id="finalScore">0</strong>
+
+            <p>Correct Answers: <span id="correctAnswers">0</span></p>
+
+            <p>Accuracy: <span id="accuracy">0%</span></p>
+
+            <p>Questions Attempted: <span id="totalQuestions">0</span></p>
+
+            <button id="restartBtn">Restart Test</button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
